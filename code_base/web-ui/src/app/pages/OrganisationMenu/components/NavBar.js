@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import { Button, BottomNavigation } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import { toAbsoluteUrl } from "../../../utils/utils";
 
 const useStyles = makeStyles((theme) => ({
@@ -21,7 +21,9 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         fontFamily: "Poppins",
         fontWeight: "bold",
-        fontSize: "3.0rem",
+        fontSize: "3.125rem",
+        fontWeight: "bold",
+        letterSpacing: "0.01rem",
         textTransform: "none",
         opacity: '0.3',
         '&:focus': {
@@ -29,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     logo: { 
-        width: "3.0rem",
         paddingRight: "3rem"
     }
 }));
